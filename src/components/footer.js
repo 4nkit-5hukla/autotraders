@@ -85,7 +85,7 @@ export default () => {
                     eventAction: 'toyota sienna 2021 - exit - toyota',
                     eventLabel: 'build and price',
                   })
-                  window.location.href = `//toyota.ca`
+                  window.location.href = `//toyota.ca?utm_source=autoTRADER&utm_medium=referral`
                 }}
                 type="button"
                 className={`btn btn-primary ${footer.ad_button}`}

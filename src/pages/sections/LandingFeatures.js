@@ -195,7 +195,7 @@ const LandingFeatures = () => {
                     eventAction: 'toyota sienna 2021 - exit - toyota',
                     eventLabel: 'build and price',
                   })
-                  window.location.href = `//toyota.ca`
+                  window.location.href = `//toyota.ca?utm_source=autoTRADER&utm_medium=referral`
                 }}
                 className={`btn btn-primary ${landing_features.features_button}`}
               >
@@ -287,7 +287,7 @@ const LandingFeatures = () => {
                         eventAction: 'toyota sienna 2021 - exit - toyota',
                         eventLabel: 'build and price',
                       })
-                      window.location.href = `//toyota.ca`
+                      window.location.href = `//toyota.ca?utm_source=autoTRADER&utm_medium=referral`
                     }}
                     className={`btn btn-primary ${landing_features.features_button} d-none d-xl-inline-block`}
                   >
@@ -305,7 +305,7 @@ const LandingFeatures = () => {
                     eventAction: 'toyota sienna 2021 - exit - toyota',
                     eventLabel: 'build and price',
                   })
-                  window.location.href = `//toyota.ca`
+                  window.location.href = `//toyota.ca?utm_source=autoTRADER&utm_medium=referral`
                 }}
                 className={`btn btn-primary ${landing_features.features_button}`}
               >

@@ -5,8 +5,11 @@ module.exports = {
     author: `@AutoTrader`,
     siteUrl: `https://autotrader.ca/`,
   },
+  pathPrefix: `/brandcampaign/toyota/sienna/en/`,
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-remove-trailing-slashes`,
+    `gatsby-plugin-create-page-html`,
     /*
     {
       resolve: "gatsby-plugin-google-tagmanager",
@@ -60,7 +63,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaultQuality: 80,
+      },
+    },
     {
       resolve: `gatsby-plugin-sass`,
       options: {

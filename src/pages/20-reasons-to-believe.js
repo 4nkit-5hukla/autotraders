@@ -1087,7 +1087,9 @@ export default () => {
               <div className="flex-shrink-1">
                 <button
                   type="button"
-                  onClick={() => (window.location.href = `//toyota.ca`)}
+                  onClick={() =>
+                    (window.location.href = `//toyota.ca?utm_source=autoTRADER&utm_medium=referral`)
+                  }
                   className={`btn btn-primary ${breadcrumb_button}`}
                 >
                   BUILD &amp; PRICE
@@ -1604,7 +1606,9 @@ export default () => {
                   <div className="d-flex justify-content-between">
                     <button
                       type="button"
-                      onClick={() => (window.location.href = `//toyota.ca`)}
+                      onClick={() =>
+                        (window.location.href = `//toyota.ca?utm_source=autoTRADER&utm_medium=referral`)
+                      }
                       className={`btn btn-primary ${breadcrumb_button}`}
                     >
                       BUILD &amp; PRICE
@@ -1758,7 +1762,7 @@ export default () => {
                           <button
                             type="button"
                             onClick={() =>
-                              (window.location.href = `//toyota.ca`)
+                              (window.location.href = `//toyota.ca?utm_source=autoTRADER&utm_medium=referral`)
                             }
                             className={`btn btn-primary ${breadcrumb_button}`}
                           >
@@ -2006,7 +2010,7 @@ export default () => {
                   <div className={navigation.nav_area}>
                     <p>Previous</p>
                     <Link
-                      to="/the-hardest-working-family-member/"
+                      to="/hardest-working-family-member.html"
                       className={navigation.navigate_previous}
                     >
                       <h4>
@@ -2028,7 +2032,7 @@ export default () => {
                   <div className={navigation.nav_area}>
                     <p>Next</p>
                     <Link
-                      to="/sienna-2021-the-view-from-every-row/"
+                      to="/sienna-from-every-row.html"
                       className={navigation.navigate_next}
                     >
                       <h4>

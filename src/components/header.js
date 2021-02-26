@@ -5,7 +5,7 @@ import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap'
 import $ from 'jquery'
 
 import header from '../css/header.module.css'
-import toyotaLogo from '../images/toyota-logo.png'
+import toyotaLogo from '../images/toyota-fixed-logo.png'
 import LogoSVG from './icons/logo'
 
 const Header = () => {
@@ -55,7 +55,8 @@ const Header = () => {
             <LogoSVG className="d-sm-none" height={50} width={80} />
           </a>
           <a
-            href="//toyota.ca"
+            rel="nofollow"
+            href="//toyota.ca?utm_source=autoTRADER&utm_medium=referral"
             onClick={() =>
               window.dataLayer.push({
                 event: 'gtm_bx',
@@ -65,7 +66,7 @@ const Header = () => {
             }
             className={at_navbar_brand_right}
           >
-            <img className="" src={toyotaLogo} alt="Toyota" />
+            <img className="" width="62px" src={toyotaLogo} alt="Toyota" />
           </a>
         </div>
       </div>
@@ -163,7 +164,7 @@ const Header = () => {
                       </div>
                       <div className={at_nav_item}>
                         <Link
-                          to="/the-hardest-working-family-member/"
+                          to="/hardest-working-family-member.html"
                           onClick={() => {
                             window.dataLayer.push({
                               event: 'gtm_bx',
@@ -177,7 +178,7 @@ const Header = () => {
                           ARTICLE
                         </Link>
                         <Link
-                          to="/the-hardest-working-family-member/"
+                          to="/hardest-working-family-member.html"
                           onClick={() => {
                             window.dataLayer.push({
                               event: 'gtm_bx',
@@ -193,7 +194,7 @@ const Header = () => {
                       </div>
                       <div className={at_nav_item}>
                         <Link
-                          to="/sienna-2021-the-view-from-every-row/"
+                          to="/sienna-from-every-row.html"
                           onClick={() => {
                             window.dataLayer.push({
                               event: 'gtm_bx',
@@ -207,7 +208,7 @@ const Header = () => {
                           ARTICLE
                         </Link>
                         <Link
-                          to="/sienna-2021-the-view-from-every-row/"
+                          to="/sienna-from-every-row.html"
                           onClick={() => {
                             window.dataLayer.push({
                               event: 'gtm_bx',

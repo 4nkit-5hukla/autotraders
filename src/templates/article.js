@@ -134,10 +134,7 @@ const ArticleTemplate = ({ data }) => {
   }, [virtualPagePushed, isBrowser, setSliderWidth, hero, hero_image])
   return (
     <Layout itemScope itemType="http://schema.org/Article">
-      <SEO
-        title={`Toyota Sienna | ${title}`}
-        description={description}
-      />
+      <SEO title={`Toyota Sienna | ${title}`} description={description} />
       <section className={hero}>
         {imageDesktop !== null && (
           <Img
@@ -381,7 +378,7 @@ const ArticleTemplate = ({ data }) => {
                       className={`w-100 ${nav_image}`}
                       fluid={
                         window.location.pathname.includes(
-                          'the-hardest-working-family-member'
+                          'hardest-working-family-member'
                         )
                           ? prevImageI.childImageSharp.fluid
                           : prevImageII.childImageSharp.fluid
@@ -392,15 +389,15 @@ const ArticleTemplate = ({ data }) => {
                       <Link
                         to={
                           window.location.pathname.includes(
-                            'the-hardest-working-family-member'
+                            'hardest-working-family-member'
                           )
-                            ? '/sienna-2021-the-view-from-every-row/'
-                            : '/the-hardest-working-family-member/'
+                            ? '/sienna-from-every-row.html'
+                            : '/hardest-working-family-member.html'
                         }
                         className={navigate_previous}
                       >
                         {window.location.pathname.includes(
-                          'the-hardest-working-family-member'
+                          'hardest-working-family-member'
                         ) ? (
                           <h4>
                             <span className="d-block">Sienna 2021,</span> The
