@@ -184,7 +184,7 @@ const LandingCTA = () => {
                     return (
                       <SwiperSlide key={ReasonId}>
                         <Link
-                          to="/20-reasons-to-believe/"
+                          to="/20-reasons-to-believe.html"
                           className={landing_cta.slide_holder}
                           onClick={() =>
                             window.dataLayer.push({
@@ -196,17 +196,26 @@ const LandingCTA = () => {
                           }
                         >
                           <Img
-                            fixed={Reasons[ReasonId - 1].slideImageMd.childImageSharp.fixed}
+                            fixed={
+                              Reasons[ReasonId - 1].slideImageMd.childImageSharp
+                                .fixed
+                            }
                             alt="slideImageMd"
                             className={`d-none d-md-block ${landing_cta.slide_image}`}
                           />
                           <Img
-                            fixed={Reasons[ReasonId - 1].slideImageSm.childImageSharp.fixed}
+                            fixed={
+                              Reasons[ReasonId - 1].slideImageSm.childImageSharp
+                                .fixed
+                            }
                             alt="slideImageSm"
                             className={`d-none d-sm-block d-md-none w-100 ${landing_cta.slide_image}`}
                           />
                           <Img
-                            fixed={Reasons[ReasonId - 1].slideImage.childImageSharp.fixed}
+                            fixed={
+                              Reasons[ReasonId - 1].slideImage.childImageSharp
+                                .fixed
+                            }
                             alt="slideImage"
                             className={`d-sm-none w-100 ${landing_cta.slide_image}`}
                           />
@@ -236,7 +245,7 @@ const LandingCTA = () => {
                   })}
                 </Swiper>
                 <Link
-                  to="/20-reasons-to-believe/"
+                  to="/20-reasons-to-believe.html"
                   onClick={() => {
                     window.dataLayer.push({
                       event: 'gtm_bx',

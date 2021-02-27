@@ -424,7 +424,7 @@ const ArticleTemplate = ({ data }) => {
                     <div className={nav_area}>
                       <p>Next</p>
                       <Link
-                        to="/20-reasons-to-believe/"
+                        to="/20-reasons-to-believe.html"
                         className={navigate_next}
                       >
                         <h4>

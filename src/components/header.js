@@ -104,7 +104,7 @@ const Header = () => {
                     <div className={at_nav_container}>
                       <div className={at_nav_item}>
                         <Link
-                          to="/"
+                          to="/index.html"
                           onClick={() => {
                             window.dataLayer.push({
                               event: 'gtm_bx',
@@ -118,7 +118,7 @@ const Header = () => {
                           HOME
                         </Link>
                         <Link
-                          to="/"
+                          to="/index.html"
                           onClick={() => {
                             window.dataLayer.push({
                               event: 'gtm_bx',
@@ -134,7 +134,7 @@ const Header = () => {
                       </div>
                       <div className={at_nav_item}>
                         <Link
-                          to="/20-reasons-to-believe/"
+                          to="/20-reasons-to-believe.html"
                           onClick={() => {
                             window.dataLayer.push({
                               event: 'gtm_bx',
@@ -148,7 +148,7 @@ const Header = () => {
                           INTERACTIVE CONTENT
                         </Link>
                         <Link
-                          to="/20-reasons-to-believe/"
+                          to="/20-reasons-to-believe.html"
                           onClick={() => {
                             window.dataLayer.push({
                               event: 'gtm_bx',

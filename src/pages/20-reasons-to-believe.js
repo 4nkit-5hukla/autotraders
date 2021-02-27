@@ -1079,7 +1079,7 @@ export default () => {
                     </button>
                   </div>
                   <div className={`flex-grow-1 my-auto ${breadcrumb_content}`}>
-                    <Link to="/">toyota sienna</Link>
+                    <Link to="/index.html">toyota sienna</Link>
                     <span>20 reasons to believe</span>
                   </div>
                 </div>
@@ -1614,7 +1614,7 @@ export default () => {
                       BUILD &amp; PRICE
                     </button>
                     <Link
-                      to="/"
+                      to="/index.html"
                       className={`btn btn-default ${mobile_back_button}`}
                     >
                       <Left />
