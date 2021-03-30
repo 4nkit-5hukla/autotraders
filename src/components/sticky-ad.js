@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { confirmAlert } from 'react-confirm-alert'
 import $ from 'jquery'
 import Img from 'gatsby-image/withIEPolyfill'
 
@@ -28,28 +27,7 @@ const StickyAd = () => {
     isBrowser = typeof window !== 'undefined',
     [adDismissed, dismissAdForever] = useState(false),
     dismissAd = () => {
-      confirmAlert({
-        title: `Dismiss Forever?`,
-        message: `Think again! offer might be limited.`,
-        buttons: [
-          {
-            label: `Yes, never show this again`,
-            onClick: () => {
-              localStorage.setItem('adDismissed', true)
-              dismissAdForever(true)
-              $(`.${Ad.wrapper}`).removeClass(Ad.showAd)
-            },
-          },
-          {
-            label: `No, I'll check later`,
-            onClick: () => {
-              localStorage.setItem('adDismissed', false)
-              dismissAdForever(false)
-              $(`.${Ad.wrapper}`).removeClass(Ad.showAd)
-            },
-          },
-        ],
-      })
+      localStorage.setItem('adDismissed', true)
     }
   useEffect(() => {
     dismissAdForever(
